@@ -18,7 +18,33 @@ app = angular.module("myApp" , []);
 
 
 app.controller("mainController" , function($scope , $http, googleService){         
-	
-	$scope.avatar = "/imagenes/web/avatar2.jpg"
+ 
+  $scope.portfolio = {
+    charlie:[
+    {nombre:"Ingenio Técnico" , 
+    categoria: "Consultora RRHH",
+    tipo: ["Responsive" , "Web Institucional" , "autoadministrable" , "Landing Page"],
+    image:"render3.jpg",
+  },
+     {nombre:"AutosMinn" , 
+      categoria: "Concesionario",
+      tipo: ["Responsive" , "Web Institucional" , "autoadministrable" , "Landing Page"],
+      image:"render2.jpg",
+  },
+      {nombre:"Sistema RRHH" , 
+      categoria: "Micrositio",
+      tipo: ["Aplicacion Web" , "Responsive" , "autoadministrable" , "Landing Page"],
+      image:"render3.jpg",
+   },
+      {nombre:"Portfolio" , 
+      categoria: "Portfolios",
+       tipo: ["Responsive" , "Web Institucional" , "autoadministrable" , "Landing Page"],
+      image:"render2.jpg",
+   }
+
+    ],
+    tomy:[]
+  }
+
 
 })
