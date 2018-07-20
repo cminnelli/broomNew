@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=ABeeZee:400i|Abril+Fatface|Amatic+SC|IBM+Plex+Sans:300|Indie+Flower|Julius+Sans+One|Lato|Libre+Franklin:200,200i|Lobster|Lora:400i|Monoton|Montserrat|Open+Sans|PT+Serif:400,700|Pacifico|Permanent+Marker|Playfair+Display:400,700|Poiret+One|Questrial|Quicksand:300|Raleway:200,400|Roboto|Rufina|Special+Elite|Spectral:300,400|Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,400|Roboto|Rufina|Special+Elite|Spectral:300,400|Ubuntu");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,400,800");
 * {
   font-family: "Raleway", sans-serif;
@@ -21,11 +21,17 @@
   font-size: 14px; }
 
 .portfolio-seccion .portfolio-contenedor {
+  transition: 2s;
   padding: 30px;
-  position: relative; }
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 400px; }
   .portfolio-seccion .portfolio-contenedor .portfolio-item {
-    background-color: whitesmoke;
+    background-color: white;
     position: absolute;
+    display: inline;
+    float: left;
     padding: 5px;
     left: 0px; }
     .portfolio-seccion .portfolio-contenedor .portfolio-item .portfolio-image {

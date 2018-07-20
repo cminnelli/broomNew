@@ -10,36 +10,36 @@
   };
 
 // INICIA FIREBASE
-firebase.initializeApp(config);
+// firebase.initializeApp(config);
 
 // ANGULAR APP
 app = angular.module("myApp" , []);
 
 
 
-app.controller("mainController" , function($scope , $http, googleService){         
+app.controller("mainController" , function($scope){         
  
   $scope.portfolio = {
     charlie:[
     {nombre:"Ingenio Técnico" , 
     categoria: "Consultora RRHH",
     tipo: ["Responsive" , "Web Institucional" , "autoadministrable" , "Landing Page"],
-    image:"render3.jpg",
+    image:"test.jpg",
   },
      {nombre:"AutosMinn" , 
       categoria: "Concesionario",
       tipo: ["Responsive" , "Web Institucional" , "autoadministrable" , "Landing Page"],
-      image:"render2.jpg",
+      image:"test.jpg",
   },
       {nombre:"Sistema RRHH" , 
       categoria: "Micrositio",
       tipo: ["Aplicacion Web" , "Responsive" , "autoadministrable" , "Landing Page"],
-      image:"render3.jpg",
+      image:"test.jpg",
    },
       {nombre:"Portfolio" , 
       categoria: "Portfolios",
        tipo: ["Responsive" , "Web Institucional" , "autoadministrable" , "Landing Page"],
-      image:"render2.jpg",
+      image:"test.jpg",
    }
 
     ],
