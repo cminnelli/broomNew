@@ -45,62 +45,22 @@ $color-blackmodern:#333;
 		margin-right:0px;
 }
 
-
-
-.sombra{
-	z-index:-10;
-	width:80%;
-	height:12px;
-	background-color:grey;
-
-	border-radius:50%;
-	opacity:0.40;
-	-webkit-filter:blur(15px);
-}
-.parrafo{
-	font-size:14px;
-}
-
-.portfolio-seccion{
-	.portfolio-contenedor{
-		transition:2s;
-		padding:30px;
-		position:relative;
-		width:100%;
-		overflow:hidden;
-		height:400px;
-
-		.portfolio-item{
-			background-color:white;
-			position:absolute;
-			display:inline;
-			float:left;
-			padding:5px;
-			left:0px;
-			.portfolio-image{
-
-				padding:10px;
-				text-align:center;
-
-				.imagen{
-					padding:5px;
-					z-index:10;
-					width:100%;
-					border-radius:10px;
-
-				}
-
-			}
-
-			.portfolio-info{
-				padding:10px;
-				.portfolio-info-wrapper{
-
-				}
-
-			}
-			
+.portfolioSeccion{
+	//background:linear-gradient(135deg, #6f42c1 0%, #4582EC 100%);
+	background:whitesmoke;
+	height:300px;
+	.imageWrapper{
+		width:200%;
+		padding:15px;
+		perspective:2000px;
+		.image{
+			transition:1s;
+			height:200px;
+			width:200px;
+			background:grey;
+			display:inline-block;
+			opacity:0.1;
+			transform:translateZ(-30px);
 		}
-
 	}
 }

@@ -2,37 +2,47 @@
 jQuery(document).ready(function($) {
 
 var items = {
-	portfolio: $(".portfolio-item")
+	portfolio: $(".image")
 }
 
-var count = {
-	zind:0,
+var functions = {
+	showImages:function(n){
+		var n =  items.portfolio.length;
+		var cont= 0;
+		var slide = 150 
+		setInterval(function(){
+			items.portfolio
+				.css({
+					transform: 'translateX(-'+ slide +'px)',
+					opacity:"0.1"
+				});
+
+			items.portfolio.eq(cont)
+				.css({
+					//opacity: '0.95',
+					});
+
+
+			items.portfolio.eq(cont -1)
+				.css({
+					opacty: '0.1',
+				});
+
+			items.portfolio.eq(cont +1)
+				.css({
+					opacty: '0.1',
+				});
+
+		cont +=1	
+		slide+=150
+
+		},1500)
+
+	}
 }
 
+functions.showImages(33)
 
 
-items.portfolio
-
-	.bind("click" , function(e){
-
-		var ix = $(this).index();
-		items.portfolio.eq(ix).remove()
-		items.portfolio.eq(ix-1).css({
-			backgroundColor: 'blue',
-			transition: '3s'
-		});
-	})
-
-	// .bind("dragover" , function(e){
-	// 	var position = e.pageX;
-	// 	console.log(position)
-
-	// 	$(this).css({
-	// 		left: position + 'px',
-	// 		opacity: '0.1',
-	// 		backgroundColor:"grey",
-	// 	});
-		
-	// })
 
 });

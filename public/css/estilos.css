@@ -8,41 +8,20 @@
   margin-left: 0px;
   margin-right: 0px; }
 
-.sombra {
-  z-index: -10;
-  width: 80%;
-  height: 12px;
-  background-color: grey;
-  border-radius: 50%;
-  opacity: 0.40;
-  -webkit-filter: blur(15px); }
-
-.parrafo {
-  font-size: 14px; }
-
-.portfolio-seccion .portfolio-contenedor {
-  transition: 2s;
-  padding: 30px;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  height: 400px; }
-  .portfolio-seccion .portfolio-contenedor .portfolio-item {
-    background-color: white;
-    position: absolute;
-    display: inline;
-    float: left;
-    padding: 5px;
-    left: 0px; }
-    .portfolio-seccion .portfolio-contenedor .portfolio-item .portfolio-image {
-      padding: 10px;
-      text-align: center; }
-      .portfolio-seccion .portfolio-contenedor .portfolio-item .portfolio-image .imagen {
-        padding: 5px;
-        z-index: 10;
-        width: 100%;
-        border-radius: 10px; }
-    .portfolio-seccion .portfolio-contenedor .portfolio-item .portfolio-info {
-      padding: 10px; }
+.portfolioSeccion {
+  background: whitesmoke;
+  height: 300px; }
+  .portfolioSeccion .imageWrapper {
+    width: 200%;
+    padding: 15px;
+    perspective: 2000px; }
+    .portfolioSeccion .imageWrapper .image {
+      transition: 1s;
+      height: 200px;
+      width: 200px;
+      background: grey;
+      display: inline-block;
+      opacity: 0.1;
+      transform: translateZ(-30px); }
 
 /*# sourceMappingURL=estilos.css.map */
